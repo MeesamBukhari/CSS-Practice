@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>General Sibling Selector</title>
+   <style>
+      h1 ~ p {
+         color: royalblue;
+      }
+
+      h1 ~ div {
+         color: orangered;
+      }
+   </style>
+</head>
+<body>
+   <p>CSS Selectors</p>
+   <h1>General Sibling Selector</h1>
+   <p>PIAIC offers the folowing courses:</p>
+   <div>
+      <p>1) Artificial Intelligence</p>
+   </div>
+
+   <div>
+      <p>2) Blockchain</p>
+   </div>
+
+   <div>
+      <p>3) Cloud Native Computing</p>
+   </div>
+
+   <div>
+      <p>4) Internet Of Things</p>
+   </div>
+
+   <p>Below is the list of students</p>
+   <table border="2" width="600">
+      <tr>
+         <th>S. No</th>
+         <th>Name</th>
+         <th>Roll No.</th>
+         <th>Courses</th>
+      </tr>
+
+      <tr>
+         <td>1</td>
+         <td>Ali</td>
+         <td>PIAIC001</td>
+         <td>
+            <ol>
+               <li>Artificial Intelligence</li>
+               <li>Blochchain</li>
+               <li>Cloud Native Computing</li>
+               <li>Internet Of Things</li>
+            </ol>
+         </td>
+      </tr>
+
+      <tr>
+         <td>2</td>
+         <td>Ainee</td>
+         <td>PIAIC002</td>
+         <td>
+            <ol>
+               <li>Artificial Intelligence</li>
+               <li>Internet Of Things</li>
+            </ol>
+         </td>
+      </tr>
+
+      <tr>
+         <td>3</td>
+         <td>Sara</td>
+         <td>PIAIC003</td>
+         <td>
+            <ol>
+               <li><p>Cloud Native Computing</p></li>
+               <li><p>Internet Of Things</p></li>
+            </ol>
+         </td>
+      </tr>
+
+      <tr>
+         <td>4</td>
+         <td>Imran</td>
+         <td>PIAIC004</td>
+         <td>
+            <ol>Artificial Intelligence</ol>
+         </td>
+      </tr>
+
+      <tr>
+         <td>5</td>
+         <td>Irfan</td>
+         <td>PIAIC005</td>
+         <td>
+            <ol>
+               <li>Blockchain</li>
+               <li>Cloud Native Computing</li>
+            </ol>
+         </td>
+      </tr>
+   </table>
+</body>
+</html>
