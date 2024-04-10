@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap; /* shorthand for flex-direction and flex-wrap */
+}
+
+.box {
+  /* min-width: 100px; */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+  flex-basis: 100px;
+  /* below is the shorthand for flex-grow, flex-shrink and flex-basis */
+  flex: 1 1 100px;
+}
+
+.box:nth-child(2) {
+  flex-grow: 2;
+  order: 4;
+  /* to make the below line work, you need to comment out the above line */
+  /* flex: 2 2 150px; */
+}
+
+/* Change the 'flex-flow' property of 'wrap' to 'nowrap' and also change the flex-grow to ;'flex-shrink' in box class styled above. Also, increase the value of 'flex-basis' to about '250px'  */
+/* .box:nth-child(2) {
+    flex-shrink: 2;
+} */
